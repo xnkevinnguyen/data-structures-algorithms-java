@@ -19,7 +19,7 @@ public class SinglyLinkedList<Type> {
 	public void removeAtIndex(int index) {
 		Node<Type> currentNode = this.head;
 		Node<Type> previousNode = null;
-		if (this.head.next != null) {
+		if (this.head.next != null && index != 0) {
 
 			for (int i = 0; i <= index; i++) {
 				if (i == index) {
@@ -32,9 +32,8 @@ public class SinglyLinkedList<Type> {
 				currentNode = currentNode.next;
 
 			}
-		}
-		else {
-			this.head=null;
+		} else {
+			this.head = this.head.next;
 			System.out.println("Emptied list");
 		}
 
@@ -47,6 +46,23 @@ public class SinglyLinkedList<Type> {
 			currentNode = currentNode.next;
 
 		}
+	}
+
+	public int size() {
+		int size = 0;
+		if (head == null) {
+			return size;
+		} else {
+			Node<Type> lastNode = this.head;
+			while (lastNode.next != null) {
+				lastNode = lastNode.next;
+				size++;
+			}
+			size++;
+			return size;
+
+		}
+
 	}
 }
 

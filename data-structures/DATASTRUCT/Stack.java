@@ -22,6 +22,9 @@ public class Stack<Type> {
 			return false;
 		}
 	}
+	public int size() {
+		return list.size();
+	}
 	public void printStack() {
 		
 		list.printList();

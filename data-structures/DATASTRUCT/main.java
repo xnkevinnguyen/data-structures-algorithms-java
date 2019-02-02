@@ -20,17 +20,38 @@ public class Main {
 		System.out.println("First Element : "+stack.getFirstItem());
 
 		stack.printStack();
+		System.out.println("Size : "+stack.size());
+
 		System.out.println("Is Stack Empty? "+stack.isStackEmpty());
 
 		stack.pop();
 		stack.pop();
 		stack.pop();
 		System.out.println("Is Stack Empty? "+stack.isStackEmpty());
-		stack.printStack();
+		System.out.println("Size : "+stack.size());		
 
 
 		System.out.println("---------Queue--------------------------------");
 
-	
+		Queue<String> queue = new Queue<String>();
+		queue.enqueue("0");
+		queue.enqueue("1");
+		queue.enqueue("2");
+		//System.out.println("First Element : "+Queue.getFirstItem());
+
+		queue.printQueue();
+		System.out.println("Size : "+queue.size());
+
+		System.out.println("Is Stack Empty? "+queue.isQueueEmpty());
+
+		queue.dequeue();
+		queue.printQueue();
+
+		queue.dequeue();
+		queue.dequeue();
+		System.out.println("Is Stack Empty? "+queue.isQueueEmpty());
+		System.out.println("Size : "+queue.size());
+		
+
 	}
 }
