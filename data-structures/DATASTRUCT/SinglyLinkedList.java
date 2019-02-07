@@ -66,7 +66,7 @@ public class SinglyLinkedList<Type> {
 	}
 }
 
-class Node<Type> {
+  class Node<Type> {
 	Type data;
 	Node<Type> next;
 

@@ -52,6 +52,6 @@ public class Main {
 		System.out.println("Is Stack Empty? "+queue.isQueueEmpty());
 		System.out.println("Size : "+queue.size());
 		
-
+		
 	}
 }
